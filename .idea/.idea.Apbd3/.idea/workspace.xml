@@ -28,7 +28,7 @@
 }]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/Kowii/CW-4-s27794.git",
+    "url": "https://github.com/Kowii/CW-5-s27794.git",
     "accountId": "d82e15d1-d510-411c-b099-604e0d8b55ea"
   }
 }]]></component>
@@ -45,7 +45,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -95,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1748461393684</updated>
       <workItem from="1748461395628" duration="82000" />
-      <workItem from="1748461528360" duration="5932000" />
+      <workItem from="1748461528360" duration="7232000" />
     </task>
     <servers />
   </component>
