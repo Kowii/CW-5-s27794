@@ -16,18 +16,11 @@ public class PatientGetDtoPrescription
     public int IdPrescription { get; set; }
     public DateTime Date { get; set; }
     public DateTime DueDate { get; set; }
-    //public ICollection<PatientGetDtoPrescriptionMedicament> Medicaments { get; set; }
-    public Doctor Doctor { get; set; }
+    public ICollection<PatientGetDtoMedicament> Medicaments { get; set; }
+    public PatientGetDtoDoctor Doctor { get; set; }
 }
 
 
-public class PatientGetDtoPrescriptionMedicament
-{
-    public int IdMedicament { get; set; }
-    public int? Dose { get; set; }
-    public string Description { get; set; }
-    public Medicament Medicament { get; set; }
-}
 public class PatientGetDtoMedicament
 {
     public int IdMedicament { get; set; }
@@ -36,7 +29,7 @@ public class PatientGetDtoMedicament
     public string Description { get; set; }
 }
 
-public class PatientGetDtoPrescriptionDoctor
+public class PatientGetDtoDoctor
 {
     public int IdDoctor { get; set; }
     public string FirstName { get; set; }
