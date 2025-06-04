@@ -9,12 +9,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="def46351-0b23-4c33-8ca9-6ec83762b515" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DTOs/PrescriptionCreateDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Apbd3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Apbd3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apbd3.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Apbd3.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/PatientsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/PatientsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DTOs/PatientGetDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DTOs/PatientGetDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/DbService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/DbService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +39,11 @@
     &quot;accountId&quot;: &quot;d82e15d1-d510-411c-b099-604e0d8b55ea&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../PJATK-APBD-EFCore-CodeFirst-Example/APBD-EF-CodeFirst-Example/Controllers/StudentsController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../PJATK-APBD-EFCore-CodeFirst-Example/APBD-EF-CodeFirst-Example/DTOs/StudentGetDto.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../PJATK-APBD-EFCore-CodeFirst-Example/APBD-EF-CodeFirst-Example/Services/DbService.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -55,6 +58,7 @@
     ".NET Launch Settings Profile.Apbd3: http.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
@@ -111,6 +115,7 @@
       <updated>1748461393684</updated>
       <workItem from="1748461395628" duration="82000" />
       <workItem from="1748461528360" duration="7232000" />
+      <workItem from="1749067064531" duration="1439000" />
     </task>
     <servers />
   </component>

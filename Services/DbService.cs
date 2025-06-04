@@ -9,6 +9,7 @@ public interface IDbService
 {
     public Task<ICollection<PatientGetDto>> GetPatientsAsync();
     public Task<PatientGetDtoPrescription> CreatePrescriptionAsync(PrescriptionCreateDto prescriptionData);
+    public Task<PatientGetDto> GetPatientsAsyncById(int PatientId);
 }
 
 public class DbService(AppDbContext data) : IDbService
@@ -118,5 +119,36 @@ public class DbService(AppDbContext data) : IDbService
             }).ToList()
         };
 
+    }
+
+    public async Task<PatientGetDto> GetPatientsAsyncById(int patientId)
+    {
+        var patient =  await data.Patients.Select(e => new PatientGetDto
+        {
+            IdPatient = e.IdPatient,
+            FirstName = e.FirstName,
+            LastName = e.LastName,
+            Birthdate = e.Birthdate,
+            Prescriptions = e.Prescriptions.Select(pr => new PatientGetDtoPrescription
+            {
+                IdPrescription = pr.IdPrescription,
+                Date = pr.Date,
+                DueDate = pr.DueDate,
+                Doctor = new PatientGetDtoDoctor
+                {
+                    IdDoctor = pr.Doctor.IdDoctor,
+                    FirstName = pr.Doctor.FirstName
+                },
+                Medicaments = pr.PrescriptionMedicaments.Select(md => new PatientGetDtoMedicament
+                {
+                    IdMedicament = md.IdMedicament,
+                    Name = md.Medicament.Name,
+                    Description = md.Medicament.Description,
+                    Dose = md.Dose
+                }).ToList()
+            }).ToList()
+            
+        }).FirstOrDefaultAsync(e => e.IdPatient == patientId);
+        return patient ?? throw new InvalidOperationException();
     }
 }

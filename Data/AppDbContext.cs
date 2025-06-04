@@ -18,13 +18,21 @@ public class AppDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
-        var patient = new Patient
-        {
+        var patient = new List<Patient>{
+        new Patient{
             IdPatient = 1,
             FirstName = "Kacper",
             LastName = "Kowalski",
             Birthdate = new DateTime(1999, 05, 28)
-        };
+        },
+        new Patient{
+            IdPatient = 2,
+            FirstName = "Marian",
+            LastName = "Paździoch",
+            Birthdate = new DateTime(1899, 05, 28)
+        }
+        }
+            ;
         var doctor = new Doctor
         {
             IdDoctor = 1,

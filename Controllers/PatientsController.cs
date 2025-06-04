@@ -13,6 +13,11 @@ public class PatientsController(IDbService dbService) : ControllerBase
     {
         return Ok(await dbService.GetPatientsAsync());
     }
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetPatientsAsyncById([FromRoute] int id)
+    {
+        return Ok(await dbService.GetPatientsAsyncById(id));
+    }
     [HttpPost]
     public async Task<IActionResult> AddPrescription([FromBody] PrescriptionCreateDto prescriptionData)
     {
